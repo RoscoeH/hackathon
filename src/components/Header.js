@@ -1,28 +1,30 @@
-import React from "react"
-import { Styled } from "theme-ui"
+/** @jsx jsx */
+import { jsx, Styled } from "theme-ui"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+    sx={{
+      bg: "primary",
     }}
   >
     <div
-      style={{
-        margin: `0 auto`,
+      sx={{
+        m: `0 auto`,
+        px: 4,
+        py: 3,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
       }}
     >
-      <Styled.h1 style={{ margin: 0 }}>
+      <Styled.h1>
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
+          sx={{
+            color: "background",
+            textDecoration: "none",
+            textTransform: "uppercase",
+            letterSpacing: "0.25rem",
           }}
         >
           {siteTitle}

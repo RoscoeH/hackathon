@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `RossHack`,
+    title: `RossHack19`,
     description: `Kick off your next, great Hackathon with this default Gatsby starter.`,
     author: `@gatsbyjs`,
   },
