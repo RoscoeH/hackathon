@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { ThemeProvider } from "theme-ui"
+import { ThemeProvider, Styled } from "theme-ui"
 
 import theme from "../config/theme"
 import Header from "./header"
@@ -29,7 +29,9 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
+        <main>
+          <Styled.root>{children}</Styled.root>
+        </main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
