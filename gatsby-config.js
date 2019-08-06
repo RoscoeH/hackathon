@@ -1,11 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `RossHack`,
+    description: `Kick off your next, great Hackathon with this default Gatsby starter.`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-theme-ui`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve(`./src/components/Layout.js`),
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,11 +33,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-icon.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
