@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A hackathon website built with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Roscoe Hart <hey@roscoehart.com>",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
@@ -31,14 +31,15 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
+    "hackathon",
     "gatsby"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/roscoeh/hackathon"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/roscoeh/hackathon/issues"
   }
 }
