@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { ThemeProvider, Styled } from "theme-ui"
 
 import theme from "../config/theme"
-import Header from "./header"
+import Header from "./Header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
