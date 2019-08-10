@@ -2,6 +2,7 @@
 import { jsx, Styled } from "theme-ui"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import { PAGE_MARGIN } from "../config/theme"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -12,7 +13,7 @@ const Header = ({ siteTitle }) => (
     <div
       sx={{
         m: `0 auto`,
-        px: 4,
+        px: PAGE_MARGIN,
         py: 3,
         maxWidth: 960,
       }}

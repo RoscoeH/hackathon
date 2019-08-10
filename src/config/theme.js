@@ -1,3 +1,5 @@
+export const PAGE_MARGIN = 4
+
 const heading = {
   fontFamily: "heading",
   lineHeight: "heading",
